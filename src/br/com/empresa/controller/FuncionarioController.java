@@ -38,6 +38,6 @@ public class FuncionarioController {
 	}
 	
 	public void excluirFuncionario(int id) {
-		funcionarios.removeIf(Funcionario -> ((br.com.empresa.model.Funcionario) funcionarios).getId() == id);
+		funcionarios.removeIf(Funcionario -> (funcionarios -> funcionario.getId() == id);
 	}
 }
